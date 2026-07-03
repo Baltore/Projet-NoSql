@@ -35,15 +35,12 @@ Le projet utilise 5 collections MongoDB :
 | `orders` | Stocke les commandes avec les produits achetés. |
 | `reviews` | Stocke les avis clients liés aux produits. |
 
-## 4. Diagramme document / relations
+## 4. Diagramme de la bdd
 
-```mermaid
-erDiagram
-    CATEGORIES ||--o{ PRODUCTS : contient
-    PRODUCTS ||--o{ REVIEWS : recoit
-    CUSTOMERS ||--o{ REVIEWS : ecrit
-    CUSTOMERS ||--o{ ORDERS : passe
-    ORDERS ||--o{ PRODUCTS : contient_snapshot
+La capture est dans :
+
+```text
+docs/Diagramme bdd.png
 ```
 
 Version document NoSQL :
