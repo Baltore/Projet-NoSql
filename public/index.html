@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catalogue NoSQL - Démo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="badge">Projet NoSQL</p>
+      <h1>Catalogue de produits Admin</h1>
+      <p> Administration du site e-commerce.</p>
+    </div>
+    <div class="hero-card">
+      <strong>5 endpoints max</strong>
+      <span>/api/dashboard</span>
+      <span>/api/products</span>
+      <span>/api/products/:slug</span>
+      <span>/api/recommendations/:customerId</span>
+      <span>/api/analytics?type=...</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="controls">
+      <button onclick="loadDashboard()">Tableau de bord</button>
+      <button onclick="loadProducts()">Catalogue filtré</button>
+      <button onclick="loadTopProducts()">Top produits</button>
+      <button onclick="loadRevenueByCategory()">CA par catégorie</button>
+      <button onclick="loadPendingOrders()">Commandes à traiter</button>
+    </section>
+
+    <section class="search-panel">
+      <h2>Recherche catalogue</h2>
+      <div class="form-grid">
+        <input id="q" placeholder="Recherche : casque, gaming, laptop..." />
+        <select id="category">
+          <option value="">Toutes catégories</option>
+          <option value="ordinateurs">Ordinateurs</option>
+          <option value="audio">Audio</option>
+          <option value="gaming">Gaming</option>
+          <option value="smart-home">Smart home</option>
+          <option value="bureau">Bureau</option>
+        </select>
+        <input id="maxPrice" type="number" placeholder="Prix max" />
+        <input id="minRating" type="number" step="0.1" placeholder="Note min" />
+        <select id="sort">
+          <option value="rating">Meilleures notes</option>
+          <option value="price-asc">Prix croissant</option>
+          <option value="price-desc">Prix décroissant</option>
+          <option value="sold">Meilleures ventes</option>
+          <option value="stock">Stock faible</option>
+        </select>
+        <button onclick="loadProducts()">Rechercher</button>
+      </div>
+    </section>
+
+    <section class="recommendation-panel">
+      <h2>Recommandations client</h2>
+      <p>Colle l’ID client affiché après <code>npm run seed</code>, puis lance la recommandation.</p>
+      <div class="form-grid two">
+        <input id="customerId" placeholder="ID client MongoDB" />
+        <button onclick="loadRecommendations()">Recommander</button>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2 id="resultTitle">Résultat</h2>
+        <span id="resultCount"></span>
+      </div>
+      <div id="results" class="cards"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

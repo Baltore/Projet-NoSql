@@ -1,0 +1,31 @@
+{
+  "categories": [
+    { "name": "Ordinateurs", "slug": "ordinateurs", "description": "PC portables et accessoires informatiques." },
+    { "name": "Audio", "slug": "audio", "description": "Casques, enceintes et microphones." },
+    { "name": "Gaming", "slug": "gaming", "description": "Périphériques et équipements gaming." },
+    { "name": "Smart home", "slug": "smart-home", "description": "Objets connectés pour la maison." },
+    { "name": "Bureau", "slug": "bureau", "description": "Produits pour télétravail et productivité." }
+  ],
+  "customers": [
+    { "name": "Qays A.", "email": "qays@example.com", "loyaltyLevel": "gold", "address": { "city": "Montmorency", "country": "France" }, "interests": ["gaming", "audio"] },
+    { "name": "Sarah Martin", "email": "sarah.martin@example.com", "loyaltyLevel": "silver", "address": { "city": "Paris", "country": "France" }, "interests": ["bureau", "smart-home"] },
+    { "name": "Mehdi Benali", "email": "mehdi.benali@example.com", "loyaltyLevel": "bronze", "address": { "city": "Lyon", "country": "France" }, "interests": ["ordinateurs"] },
+    { "name": "Emma Leroy", "email": "emma.leroy@example.com", "loyaltyLevel": "gold", "address": { "city": "Paris", "country": "France" }, "interests": ["gaming", "ordinateurs"] },
+    { "name": "Nicolas Dubois", "email": "nicolas.dubois@example.com", "loyaltyLevel": "silver", "address": { "city": "Marseille", "country": "France" }, "interests": ["audio"] },
+    { "name": "Ines Moreau", "email": "ines.moreau@example.com", "loyaltyLevel": "bronze", "address": { "city": "Lille", "country": "France" }, "interests": ["smart-home", "bureau"] }
+  ],
+  "products": [
+    { "name": "Laptop NovaBook 14", "slug": "laptop-novabook-14", "brand": "NovaTech", "categorySlug": "ordinateurs", "price": 799.99, "stock": 9, "sold": 38, "averageRating": 4.6, "tags": ["ordinateur", "portable", "travail"], "specs": { "ram": "16 Go", "storage": "512 Go SSD", "screen": "14 pouces" }, "description": "PC portable léger pour étudiants et télétravail." },
+    { "name": "Laptop ProStation 16", "slug": "laptop-prostation-16", "brand": "WorkMax", "categorySlug": "ordinateurs", "price": 1299.99, "stock": 4, "sold": 21, "averageRating": 4.7, "tags": ["ordinateur", "performance", "dev"], "specs": { "ram": "32 Go", "storage": "1 To SSD", "screen": "16 pouces" }, "description": "Machine puissante pour développement, montage et multitâche." },
+    { "name": "Casque AirSound Pro", "slug": "casque-airsound-pro", "brand": "Soundly", "categorySlug": "audio", "price": 149.99, "stock": 18, "sold": 72, "averageRating": 4.5, "tags": ["casque", "bluetooth", "audio"], "specs": { "battery": "35h", "noiseCancelling": true }, "description": "Casque sans fil avec réduction de bruit." },
+    { "name": "Micro Studio USB", "slug": "micro-studio-usb", "brand": "VoiceLab", "categorySlug": "audio", "price": 89.99, "stock": 3, "sold": 44, "averageRating": 4.2, "tags": ["micro", "stream", "podcast"], "specs": { "connection": "USB-C", "pattern": "cardioïde" }, "description": "Microphone USB simple pour streaming et visio." },
+    { "name": "Clavier RGB Phantom", "slug": "clavier-rgb-phantom", "brand": "GameForge", "categorySlug": "gaming", "price": 109.99, "stock": 11, "sold": 95, "averageRating": 4.8, "tags": ["clavier", "gaming", "rgb"], "specs": { "switches": "red", "layout": "AZERTY" }, "description": "Clavier mécanique réactif pour jeux compétitifs." },
+    { "name": "Souris Strike X", "slug": "souris-strike-x", "brand": "GameForge", "categorySlug": "gaming", "price": 59.99, "stock": 25, "sold": 112, "averageRating": 4.4, "tags": ["souris", "gaming", "dpi"], "specs": { "dpi": "26000", "weight": "68g" }, "description": "Souris légère avec capteur haute précision." },
+    { "name": "Écran Vision 27", "slug": "ecran-vision-27", "brand": "PixelOne", "categorySlug": "bureau", "price": 249.99, "stock": 6, "sold": 31, "averageRating": 4.3, "tags": ["écran", "bureau", "27 pouces"], "specs": { "resolution": "QHD", "refreshRate": "75 Hz" }, "description": "Écran confortable pour productivité." },
+    { "name": "Chaise ErgoDesk", "slug": "chaise-ergodesk", "brand": "OfficeLab", "categorySlug": "bureau", "price": 199.99, "stock": 2, "sold": 19, "averageRating": 4.0, "tags": ["chaise", "bureau", "ergonomie"], "specs": { "material": "tissu", "adjustable": true }, "description": "Chaise ergonomique pour longues sessions." },
+    { "name": "Ampoule SmartLight", "slug": "ampoule-smartlight", "brand": "HomeLink", "categorySlug": "smart-home", "price": 24.99, "stock": 40, "sold": 140, "averageRating": 4.1, "tags": ["ampoule", "connectée", "wifi"], "specs": { "colors": "RGB", "assistant": "Alexa/Google" }, "description": "Ampoule connectée pilotable par application." },
+    { "name": "Caméra SecureHome", "slug": "camera-securehome", "brand": "HomeLink", "categorySlug": "smart-home", "price": 79.99, "stock": 5, "sold": 50, "averageRating": 4.2, "tags": ["caméra", "sécurité", "wifi"], "specs": { "resolution": "1080p", "nightVision": true }, "description": "Caméra connectée pour surveiller son logement." },
+    { "name": "Hub Connect Plus", "slug": "hub-connect-plus", "brand": "HomeLink", "categorySlug": "smart-home", "price": 69.99, "stock": 8, "sold": 27, "averageRating": 3.9, "tags": ["hub", "maison", "connecté"], "specs": { "protocols": ["WiFi", "Zigbee"], "ports": 4 }, "description": "Hub central pour objets connectés." },
+    { "name": "Support Laptop Flex", "slug": "support-laptop-flex", "brand": "OfficeLab", "categorySlug": "bureau", "price": 39.99, "stock": 1, "sold": 66, "averageRating": 4.6, "tags": ["support", "laptop", "bureau"], "specs": { "material": "aluminium", "foldable": true }, "description": "Support pliable pour améliorer la posture." }
+  ]
+}
